@@ -77,7 +77,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("private hq Bot")
+        print("private vedantu Bot")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -135,13 +135,13 @@ class Bot(discord.Client):
         self.answer_scores = answer_scores
 
         # embed creation
-        self.embed=discord.Embed(title="__**HQ LIVE**__", description="**Stardom**",color=0xFF0000)
+        self.embed=discord.Embed(title="__**VEDANTU LIVE**__", description="**Stardom**",color=0xFF0000)
         self.embed.set_thumbnail(url="https://cdn.discordapp.com/avatars/738654832489678568/98fae5dd7d6ae2b2078b851a0c2a45d8.png?size=256")
         self.embed.add_field(name="**Option 1️⃣**", value="0.0", inline=False)
         self.embed.add_field(name="**Option 2️⃣**", value="0.0", inline=False)
         self.embed.add_field(name="**Option 3️⃣**", value="0.0", inline=False)
         self.embed.add_field(name="Best Answer",value="<a:loading:695158657565851658>")
-        self.embed.set_footer(text=f"HQ made by saini saab", \
+        self.embed.set_footer(text=f"VEDANTU made by saini saab", \
             icon_url="https://cdn.discordapp.com/emojis/65144659163194133.gif?v=1")
         #await self.bot.add_reaction(embed,':spy:')
 
@@ -204,7 +204,7 @@ class Bot(discord.Client):
 
     async def on_ready(self):
         print("==============")
-        print("Swagbucks")
+        print("Vedantu")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -219,7 +219,7 @@ class Bot(discord.Client):
         if message.author == self.user or message.guild == None:
             return
 
-        if message.content.lower() == "+":
+        if message.content.lower() == "VE":
             await message.delete()
             if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
                 self.embed_msg = None
@@ -239,8 +239,8 @@ class Bot(discord.Client):
 
         if message.content.startswith('&help'):
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
-           embed = discord.Embed(title="**__HQ__**", description="**Private Bot**", color=0x0000FF)
-           embed.add_field(name="__Game__", value="*HQ Live*", inline=False)
+           embed = discord.Embed(title="**__VEDANTU__**", description="**Private Bot**", color=0x0000FF)
+           embed.add_field(name="__Game__", value="*VEDANTU Live!! VE*", inline=False)
            embed.add_field(name="__Bot Command__", value="HQ", inline=False)
            embed.add_field(name="__Made By__ daman saini", value="*Anonymous*", inline=False)
            await message.channel.send(embed=embed)
