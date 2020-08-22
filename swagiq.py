@@ -17,17 +17,16 @@ BOT_OWNER_ROLE_ID = "495639450936803369"
 
  
 oot_channel_id_list = [
-    "732600186232242177",    #Official Gamers
-    "736042800650387517",    #Challenge Phoenix
-    "726448126260412537",    #Trivia Galaxy
-    "737818050891350076",    #Trivia Flipkart Bots
-    "735434568454373396",    #Google Pro Bot
-    "726448126260412537",    #Velocity Bots
-    "702001878594224210",    #Trivia Duck
-    "729535056594337812",    #Viper King
-    "736042800650387517",    #Smart Family Bots
-    "729535056594337812",    #Trivia Allen
-    "735203522617802772",    #Dragon World
+"729900240395829340", 
+"722080589997539368", 
+"743059378743148555",
+"731059238507380756",
+"737933577634840596",
+"735434573533675601",
+"744516111877275729",
+"729167871413846097",
+"740581333788786818",
+"733232237482475581",
 ]
 
 
@@ -78,7 +77,7 @@ class SelfBot(discord.Client):
 
     async def on_ready(self):
         print("======================")
-        print("Trivia edges private hq Bot")
+        print("private hq Bot")
         print("Connected to discord.")
         print("User: " + self.user.name)
         print("ID: " + str(self.user.id))
@@ -212,7 +211,7 @@ class Bot(discord.Client):
 
         await self.clear_results()
         await self.update_embeds()
-        await self.change_presence(activity=discord.Game(name='Swagbucks Live...'))
+        await self.change_presence(activity=discord.Game(name='Hq Live...'))
 
     async def on_message(self, message):
 
@@ -301,4 +300,3 @@ if __name__ == '__main__':
 
     p_bot.join()
     p_selfbot.join()
-
