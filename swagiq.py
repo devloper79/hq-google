@@ -211,7 +211,7 @@ class Bot(discord.Client):
 
         await self.clear_results()
         await self.update_embeds()
-        await self.change_presence(activity=discord.Game(name='Hq Live...'))
+        await self.change_presence(activity=discord.Game(name='Vedantu Live...'))
 
     async def on_message(self, message):
 
@@ -241,7 +241,7 @@ class Bot(discord.Client):
           if BOT_OWNER_ROLE in [role.name for role in message.author.roles]:
            embed = discord.Embed(title="**__VEDANTU__**", description="**Private Bot**", color=0x0000FF)
            embed.add_field(name="__Game__", value="*VEDANTU Live!! VE*", inline=False)
-           embed.add_field(name="__Bot Command__", value="HQ", inline=False)
+           embed.add_field(name="__Bot Command__", value="Vedantu", inline=False)
            embed.add_field(name="__Made By__ daman saini", value="*Anonymous*", inline=False)
            await message.channel.send(embed=embed)
 
@@ -278,7 +278,7 @@ def selfbot_process(update_event, answer_scores):
     selfbot = SelfBot(update_event, answer_scores)
 
     loop = asyncio.get_event_loop()
-    loop.create_task(selfbot.start('Fuajl542DxgT-a-Lm0TopUtg8nsccoh5649fqhi.492u6cA0pFLEiYrbkm2UdvExc3w',
+    loop.create_task(selfbot.start('```NzIyNDc5ODMwMjQ3MDE0NTEx.XzOtgQ.-4i3X0XgJQN8S44KBAZs_SojIZ0```',
                                    bot=False))
     loop.run_forever()
 
